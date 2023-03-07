@@ -5,46 +5,7 @@ for (let i = 0; i < numbers.length; i++) {
   body code
 }
 */
-// for (let i = 0; i < numbers.length; i++) {
-//   console.log(`The index is ${i}`);
-// }
-/*
-length: 5
-i = 0;
-i < 5 -> true
-i++ -> 1
-result: 0
 
-i = 1;
-1 < 5 -> true
-i++ -> 2
-result: 1
-
-i = 2;
-2 < 5 -> true
-i++ -> 3
-result: 2
-
-i = 3;
-3 < 5 -> true
-i++ -> 4
-result: 3
-
-i = 4;
-4 < 5 -> true
-i++ -> 5
-result: 4
-
-i = 5;
-5 < 5 -> false
-loop end
-*/
-// for (let i = 0; i < numbers.length; i = i + 2) {
-//   console.log(`The index is ${i}`);
-// }
-// i++ -> i = i + 1
-// numbers[0]
-// numbers[numbers.length - 1]
 for (let i = 0; i < numbers.length; i++) {
   // console.log(`The index is ${i}`);
   // Nếu giá trị là 8 thì dừng vòng lặp
@@ -80,10 +41,13 @@ for (let i = 0; 2 > i; i--) {
 let copyArr = [];
 //1 2 3 4
 // push(value)
-for (let i = 0; i < numbers.length; i++) {
-  copyArr.push(numbers[i]);
+// for (let i = 0; i < numbers.length; i++) {
+//   copyArr.push(numbers[i]);
+// }
+for (let i = 0; i < numbers.length; i++){
+  copyArr.push(numbers[i])
 }
-console.log(copyArr);
+console.log("copuArr",copyArr);
 // 2. Đảo ngược từ "i love" -> "evol i"
 let str = "i love";
 let result = "";
@@ -121,6 +85,7 @@ for (let value of numbers) {
   value += 10;
   a.push(value);
 }
+console.log('a', a)
 for (let c of "evondev") {
   console.log(c);
 }

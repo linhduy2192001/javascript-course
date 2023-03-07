@@ -6,6 +6,7 @@ console.log(num1 === num2); // true
 // By referrences -> nói tới vùng bộ nhớ
 const arr1 = [1, 2];
 const arr2 = [1, 2];
+console.log('arr1,arr2', arr1,arr2)
 console.log(arr1 === arr2); // false
 // JSON: Javascript Object Notation
 /*
@@ -25,14 +26,16 @@ console.log(arr1 === arr2); // false
 console.log(JSON.stringify([1, 2, 3]));
 console.log(JSON.parse("[1,2,3]"));
 const arr1Str = JSON.stringify(arr1);
+console.log('arr1Str', arr1Str)
 const arr2Str = JSON.stringify(arr2);
+console.log('arr2Str', arr2Str)
 console.log(arr1Str === arr2Str);
 // clone
 const students = ["a", "b", "c", "d", "e"];
 // 1. sử dụng phương thức slice()
 const sliceStudents = students.slice();
-sliceStudents.pop(); //
-console.log(students);
+const newStudent = sliceStudents.pop(); //
+console.log(sliceStudents);
 // 2. spread operator [...array]
 const spreadStudents = [...students];
 console.log(spreadStudents);
@@ -43,6 +46,7 @@ const array1 = [1, 2];
 const array2 = [3, 4];
 const array3 = [5, 6];
 const mergeArray = array1.concat(array2, array3);
+// gộp mảng
 console.log(mergeArray);
 // 2. spread operator
 // [...array]
@@ -57,7 +61,7 @@ console.log(a, b, c);
 // const [indexName, indexName, indexName] = toys;
 const [ball, ...rest] = toys;
 // console.log(ball, sword, arrrow);
-console.log(rest);
+console.log("reser",rest);
 // rest parameter ...
 function demo(a, ...rest) {
   console.log(a, rest);

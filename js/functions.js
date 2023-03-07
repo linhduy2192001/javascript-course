@@ -109,7 +109,7 @@ const square = function (x) {
 };
 square(5); // 25
 // Arrow function
-const square = () => {
+const square1 = () => {
   // if else
   return 1000;
 };

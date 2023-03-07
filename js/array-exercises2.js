@@ -16,7 +16,7 @@ const array = [
 // Boolean
 // built-in object
 const filterFalsy = array.filter((item) => Boolean(item));
-// console.log(filterFalsy);
+console.log(filterFalsy);
 const complexArray = [
   [1, 2, 3, [false, null]],
   [1, 5, 6, ["javascript"]],
@@ -25,35 +25,53 @@ const complexArray = [
 // flatten array
 // flat(number)
 const result = complexArray.flat(2);
-// console.log(result);
+console.log(result);
 // 2. Đảo ngược số nguyên. Ví dụ 1234 -> 4321, -567 -> -765
 // Math.sign(123) -> 1
 // Math.sign(-123) -> -1
-function reverseNumber(number) {
-  // convert to String
-  // split("") -> [value]
-  // reverse()
-  // join("")
-  const value =
-    parseInt(number.toString().split("").reverse().join("")) *
-    Math.sign(number);
-  console.log(value);
-}
+// function reverseNumber(number) {
+//   // convert to String
+//   // split("") -> [value]
+//   // reverse()
+//   // join("")
+//   const value =
+//     parseInt(number.toString().split("").reverse().join("")) *
+//     Math.sign(number);
+//   console.log(value);
+// }
+// function reverseNumber(number) {
+//   const value = parseInt(number.toString().split("").reverse().join(""))*Math.sign(number)
+//   console.log('value', value)
+// }
+// reverseNumber(123)
 // reverseNumber(-1234);
 // reverseNumber(1234);
 // 4. Viết chương trình có tên là fizzBuzz với đầu vào là một số nguyên, và cho chạy từ 1 cho tới số nguyên đó rồi kiểm tra nếu có số chia hết cho 2 thì in ra chữ "Fizz", nếu chia hết cho 3 thì in ra chữ "Buzz", nếu chia hết cho 2 và 3 thì in ra "FizzBuzz"
-function fizzBuzz(number) {
-  for (let i = 1; i <= number; i++) {
-    // 6
+// function fizzBuzz(number) {
+//   for (let i = 1; i <= number; i++) {
+//     // 6
+//     if (i % 3 === 0 && i % 2 === 0) {
+//       console.log("FizzBuzz");
+//     } else if (i % 2 === 0) {
+//       console.log("Fizz");
+//     } else if (i % 3 === 0) {
+//       console.log("Buzz");
+//     }
+//   }
+// }
+function fizzBuzz(nunber) {
+  for (let i = 1; i <= nunber; i++) {
     if (i % 3 === 0 && i % 2 === 0) {
-      console.log("FizzBuzz");
+      console.log("Fizz buzz" ,i)
     } else if (i % 2 === 0) {
-      console.log("Fizz");
-    } else if (i % 3 === 0) {
-      console.log("Buzz");
+      console.log("Fizz", i)
+    } else if (i % 3 == 0) {
+      console.log("Buzz",i)
     }
   }
 }
+  
+  fizzBuzz(15)
 // fizzBuzz(15);
 // + - * / %
 // 6 % 2 = 3 dư 0
@@ -86,7 +104,8 @@ function unique(arr) {
   }
   return result;
 }
-// console.log(unique([1, 2, 3, 1, 1, 1, 2, 2, 2, 5, 5, 5, 7, 7, 6]));
+
+console.log(unique([1, 2, 3, 1, 1, 1, 2, 2, 2, 5, 5, 5, 7, 7, 6]));
 // console.log(unique("abc"));
 // 7. Viết 1 function xử lý từ 1 mảng lớn thành nhiều mảng con dựa vào một số nguyên đầu vào. Ví dụ ([1,2,3,4,5], 2) -> [[1,2], [3,4], [5]]
 // ([1,2,3,4,5,6], 3) -> [[1,2,3], [4,5,6]]

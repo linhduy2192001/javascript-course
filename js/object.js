@@ -16,42 +16,42 @@ const student = {
 // method
 // 2 cách truy xuất giá trị của object
 // 2.1 Dot notation object.key
-console.log(student.name);
-// student.last - name;
-// 2.2 Bracket notation ["key"]
-console.log(student["age"]);
-console.log(student["last-name"]);
-// Thay đổi giá trị của Object
-student.age = 20;
-student.male = "male";
-student.isDeveloper = true;
-student["is-developer"] = false;
-student.hello = function () {
-  console.log("hello");
-};
-// is-developer
-// isDeveloper
-console.log(student);
-// Cách xoá giá trị trong Object
-delete student["last-name"];
-// for in
-for (let key in student) {
-  if (key === "name") {
-    console.log("hello name");
-  }
-  const value = student[key];
-  console.log(`${key}:${value}`);
-}
+// console.log(student.name);
+// // student.last - name;
+// // 2.2 Bracket notation ["key"]
+// console.log(student["age"]);
+// console.log(student["last-name"]);
+// // Thay đổi giá trị của Object
+// student.age = 20;
+// student.male = "male";
+// student.isDeveloper = true;
+// student["is-developer"] = false;
+// student.hello = function () {
+//   console.log("hello");
+// };
+// // is-developer
+// // isDeveloper
+// console.log(student);
+// // Cách xoá giá trị trong Object
+// delete student["last-name"];
+// // for in
+// for (let key in student) {
+//   if (key === "name") {
+//     console.log("hello name");
+//   }
+//   const value = student[key];
+//   console.log(`${key}:${value}`);
+// }
 // Object.keys(object) -> trả về 1 mảng chứa tất cả các keys của object
 const keys = Object.keys(student);
 console.log(keys);
 console.log(keys.length);
 // Object.values(object) -> trả về 1 mảng chứa tất cả các giá trị của object
 const values = Object.values(student);
-console.log(values);
+console.log('values', values)
 // Object.entries(object) -> trả về 1 mảng nested [["name", "evondev"], ["age", 20]] gồm có key và value
 const entries = Object.entries(student);
-console.log(entries);
+console.log('entries', entries)
 // Object.assign()
 const a = {
   firstName: "tuan",

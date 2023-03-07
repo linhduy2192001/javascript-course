@@ -8,7 +8,18 @@ const fruit = "lemon";
 // if (fruit === "watermelon") {
 //   console.log("You like to eat watermelon");
 // }
-// switch (fruit) {
+switch (fruit) {
+  case "apple":
+    console.log("like to eeat apple ")
+    break;
+  case "lemon":
+    console.log("like to eat lemon")
+    break;
+  default:
+    console.log("like to eat both")
+    break
+  
+}
 //   case "apple":
 //     console.log("You like to eat apple");
 //     break;

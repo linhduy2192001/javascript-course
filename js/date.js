@@ -85,10 +85,14 @@ console.log(now.toLocaleDateString("vi-VI")); // 14/5/2021
 console.log(now.toISOString()); // 2021-05-13T17:24:04.286Z
 // 14/05/2021
 // input: Fri May 14 2021 00:26:21 GMT+0700 (Indochina Time)
-const myTime = new Date("Fri May 14 2021 00:26:21 GMT+0700 (Indochina Time)"); // 14/5/2021
-const myYear = myTime.getFullYear(); // 2021
-const myMonth = myTime.getMonth() + 1; // 5
-const myDate = myTime.getDate(); // 14
+// const myTime = new Date("Fri May 14 2021 00:26:21 GMT+0700 (Indochina Time)"); // 14/5/2021
+// const myYear = myTime.getFullYear(); // 2021
+// const myMonth = myTime.getMonth() + 1; // 5
+// const myDate = myTime.getDate(); // 14
+const myTime = new Date("Fri May 14 2021 00:26:21 GMT+0700 (Indochina Time)")
+const myYear = myTime.getFullYear()
+const myMonth = myTime.getMonth() +1
+const myDate = myTime.getDate()
 const prefixMonth = myMonth < 10 ? "0" : "";
 console.log(`${myDate}/${prefixMonth}${myMonth}/${myYear}`);
 // setTimeout vs setInterval
