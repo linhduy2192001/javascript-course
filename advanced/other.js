@@ -11,7 +11,7 @@ function total(x, y) {
   x + y;
 }
 // 3. 2 cách chuyển đổi dữ liệu mới
-const str = "";
+const str = "123";
 console.log(parseInt(str));
 console.log(parseFloat(str));
 console.log(Number(str));
